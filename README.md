@@ -1,6 +1,6 @@
 # Charts Repo Actions Demo
 
-[![](https://github.com/helm/charts-repo-actions-demo/workflows/Release%20Charts/badge.svg?branch=main)](https://github.com/helm/charts-repo-actions-demo/actions)
+[![Release Charts](https://github.com/m2stacklab/charts/actions/workflows/release.yaml/badge.svg)](https://github.com/m2stacklab/charts/actions/workflows/release.yaml)
 
 Example project to demo testing and hosting a chart repository with GitHub Pages and Actions.
 
