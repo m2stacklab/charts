@@ -1,4 +1,0 @@
-redis:
-  enabled: false
-  cluster:
-    enabled: false

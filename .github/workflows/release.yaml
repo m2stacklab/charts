@@ -34,7 +34,6 @@ jobs:
           rm -rf .cr-release-packages
           mkdir -p .cr-release-packages
           helm package charts/example-v1 --app-version=${VERSION:1} --version=${VERSION:1} --destination=.cr-release-packages
-          helm package charts/dependencies-v1 --app-version=${VERSION:1} --version=${VERSION:1} --destination=.cr-release-packages
       - name: Run chart-releaser
         # switch back to helm/chart-releaser-action if this contribution is ever merged
         uses: askcloudarchitech/chart-releaser-action@skip-packaging-option
