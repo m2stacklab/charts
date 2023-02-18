@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "fullname" . }}
+  labels:
+    {{- include "labels" . | nindent 4 }}
+spec:
+  replicas: {{.Values.Replicate}}
+  selector:
+    matchLabels:
+      {{- include "selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.foo.repository}}:{{ .Values.image.foo.tag}}"
+          imagePullPolicy: {{ .Values.image.foo.pullPolicy }}
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+          env:
+            - name: "TITLE"
+              value: {{ .Values.title }}
+            - name: "BY"
+              value: {{ .Values.by }}
+            - name: "BY_HOST"
+              value: {{ .Values.byHost }}
+            - name: "SHOW_HOSTNAME"
+              value: "{{ .Values.showHostname }}"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "fullname" .}}
+  labels:
+    {{- include "labels" . | nindent 4 }}
+  namespace: {{ .Values.Namespace }}
+spec:
+  ports:
+    - name: http
+      port: 3000
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    {{- include "selectorLabels" . | nindent 4 }}
+  sessionAffinity: None
+  type: ClusterIP
+

@@ -1,0 +1,14 @@
+Name: website-app
+Replicate: 1
+Namespace: default
+image:
+    foo:
+        repository: m2stacklab/website-app
+        tag: "latest"
+        pullPolicy: Always
+host:
+    name: "app.hlavaceklab.io"
+title: "hlavaceklab"
+by: "hlavaceklab"
+byHost: "hlavaceklab.io"
+showHostname: "true"
