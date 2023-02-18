@@ -41,4 +41,14 @@ entries:
     urls:
     - https://github.com/m2stacklab/charts/releases/download/foo-microservice-0.0.1/foo-microservice-0.0.1.tgz
     version: 0.0.1
-generated: "2023-02-18T21:12:47.380098951Z"
+  website-app:
+  - apiVersion: v1
+    appVersion: v1.0.0
+    created: "2023-02-18T22:28:14.234277666Z"
+    description: Deploy custom web site app
+    digest: 5fe66fe8f18d482871fadb00acb5289e15ddada9c473789710d795a0c5019d8a
+    name: website-app
+    urls:
+    - https://github.com/m2stacklab/charts/releases/download/website-app-v1.0.0/website-app-v1.0.0.tgz
+    version: v1.0.0
+generated: "2023-02-18T22:28:14.234293066Z"
