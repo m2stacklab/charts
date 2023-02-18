@@ -1,0 +1,12 @@
+Name: foo-microservice
+Replicate: 1
+Namespace: default
+test:
+    Name: initial-values
+image:
+    foo:
+        repository: m2stacklab/foo-microservice
+        tag: "latest"
+        pullPolicy: Always
+host:
+    name: "api.hlavaceklab.io"
