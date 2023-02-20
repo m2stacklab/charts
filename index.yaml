@@ -41,6 +41,16 @@ entries:
     urls:
     - https://github.com/m2stacklab/charts/releases/download/foo-microservice-0.0.1/foo-microservice-0.0.1.tgz
     version: 0.0.1
+  microservice:
+  - apiVersion: v1
+    appVersion: v1.0.0
+    created: "2023-02-20T20:34:50.613098424Z"
+    description: Deploy bar Go microservice
+    digest: a52f4f050f4345deb95ad7b4c63ca691470ac5931472a2cd9c1c41025ebe934b
+    name: microservice
+    urls:
+    - https://github.com/m2stacklab/charts/releases/download/microservice-v1.0.0/microservice-v1.0.0.tgz
+    version: v1.0.0
   website-app:
   - apiVersion: v1
     appVersion: v1.0.0
@@ -51,4 +61,4 @@ entries:
     urls:
     - https://github.com/m2stacklab/charts/releases/download/website-app-v1.0.0/website-app-v1.0.0.tgz
     version: v1.0.0
-generated: "2023-02-18T22:28:14.234293066Z"
+generated: "2023-02-20T20:34:50.613108124Z"
