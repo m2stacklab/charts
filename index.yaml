@@ -43,6 +43,15 @@ entries:
     version: 0.0.1
   microservice:
   - apiVersion: v1
+    appVersion: v1.0.2
+    created: "2023-02-20T20:49:12.609019574Z"
+    description: Deploy Go or Python microservice
+    digest: 6c1ea5f416b09372e133e0c7e5d0261431b4defad5b74a1ac64a8ad40e373f55
+    name: microservice
+    urls:
+    - https://github.com/m2stacklab/charts/releases/download/microservice-v1.0.1/microservice-v1.0.1.tgz
+    version: v1.0.1
+  - apiVersion: v1
     appVersion: v1.0.0
     created: "2023-02-20T20:34:50.613098424Z"
     description: Deploy bar Go microservice
@@ -61,4 +70,4 @@ entries:
     urls:
     - https://github.com/m2stacklab/charts/releases/download/website-app-v1.0.0/website-app-v1.0.0.tgz
     version: v1.0.0
-generated: "2023-02-20T20:34:50.613108124Z"
+generated: "2023-02-20T20:49:12.609030374Z"
