@@ -1,0 +1,13 @@
+Name: go-bar-microservice
+Replicate: 1
+Namespace: default
+image:
+    bar:
+        repository: m2stacklab/go-bar-microservice
+        tag: "latest"
+        pullPolicy: Always
+host:
+    name: "api.hlavaceklab.io"
+message: 'Hi bar'
+routePath: '/api/v1/bar'
+port: 3002

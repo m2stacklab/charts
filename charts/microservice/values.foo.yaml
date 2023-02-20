@@ -1,0 +1,13 @@
+Name: foo-microservice
+Replicate: 1
+Namespace: default
+image:
+    bar:
+        repository: m2stacklab/foo-microservice
+        tag: "latest"
+        pullPolicy: Always
+host:
+    name: "api.hlavaceklab.io"
+message: 'Hi foo'
+routePath: '/api/v1/foo'
+port: 3001
