@@ -1,46 +1,5 @@
 apiVersion: v1
 entries:
-  example-v1:
-  - apiVersion: v1
-    appVersion: 0.1.8
-    created: "2023-02-14T22:16:31.610544651Z"
-    description: Deploy a basic Alpine Linux pod
-    digest: 78c8ff8153134e04cc305555add5175f9a4c96b07b3e4a126926385431f5711e
-    home: https://helm.sh/helm
-    maintainers:
-    - email: email@example.com
-      name: Name
-    name: example-v1
-    sources:
-    - https://github.com/helm/helm
-    urls:
-    - https://github.com/m2stacklab/charts/releases/download/example-v1-0.1.8/example-v1-0.1.8.tgz
-    version: 0.1.8
-  - apiVersion: v1
-    appVersion: 0.1.5
-    created: "2023-02-14T21:56:39.743168287Z"
-    description: Deploy a basic Alpine Linux pod
-    digest: 65a2514ee2f26e370b36eaedb55aac686efc9a6bc6c675628d5f01fb26755bec
-    home: https://helm.sh/helm
-    maintainers:
-    - email: email@example.com
-      name: Name
-    name: example-v1
-    sources:
-    - https://github.com/helm/helm
-    urls:
-    - https://github.com/m2stacklab/charts/releases/download/example-v1-0.1.5/example-v1-0.1.5.tgz
-    version: 0.1.5
-  foo-microservice:
-  - apiVersion: v1
-    appVersion: 0.0.1
-    created: "2023-02-18T21:12:47.38009205Z"
-    description: Deploy foo python microservice
-    digest: 7f19394f1091cd2a9c6717dbb137f948208d8b2add860ceda32b34db5034d2d2
-    name: foo-microservice
-    urls:
-    - https://github.com/m2stacklab/charts/releases/download/foo-microservice-0.0.1/foo-microservice-0.0.1.tgz
-    version: 0.0.1
   microservice:
   - apiVersion: v1
     appVersion: v1.0.2
@@ -51,15 +10,6 @@ entries:
     urls:
     - https://github.com/m2stacklab/charts/releases/download/microservice-v1.0.1/microservice-v1.0.1.tgz
     version: v1.0.1
-  - apiVersion: v1
-    appVersion: v1.0.0
-    created: "2023-02-20T20:34:50.613098424Z"
-    description: Deploy bar Go microservice
-    digest: a52f4f050f4345deb95ad7b4c63ca691470ac5931472a2cd9c1c41025ebe934b
-    name: microservice
-    urls:
-    - https://github.com/m2stacklab/charts/releases/download/microservice-v1.0.0/microservice-v1.0.0.tgz
-    version: v1.0.0
   website-app:
   - apiVersion: v1
     appVersion: v1.0.0
